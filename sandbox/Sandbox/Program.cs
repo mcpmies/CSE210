@@ -2,37 +2,19 @@ using System;
 
 class Program
 {
-
-    static double AddNumbers(double a, double b)
-    {
-        return a + b;
-    }
-
-
     static void Main(string[] args)
     {
-    //     List<int> myNumbers = new List<int>();
-    //     myNumbers.Add(25);
-    //     myNumbers.Add(32);
+        
+        Circle myCircle = new Circle();
+        myCircle.SetRadius(10);
+        Console.WriteLine($"{myCircle.GetRadius()}");
 
-    //     foreach(int i in myNumbers)
-    //     {
-    //         Console.WriteLine(i);
-    //     }
+        myCircle.GetArea();
+        Console.WriteLine($"{myCircle.GetArea()}");
 
-        double total = AddNumbers(123.98, 985.123456);
-        Console.WriteLine(total);
-
-        bool done = false;
-        while(!done)
-        {
-            //...
-            done = true;
-        }
-
-        do
-        {
-
-        }   while(!done);
+        Cylinder myCylinder = new Cylinder();
+        myCylinder.SetHeight(10);
+        myCylinder.SetCircle(myCircle);
+        Console.WriteLine($"{myCylinder.GetVolume()}");
     }
 }
