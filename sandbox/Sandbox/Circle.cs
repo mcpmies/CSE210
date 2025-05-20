@@ -2,6 +2,17 @@ class Circle
 {
     private double _radius;
 
+    public Circle()
+    {
+        _radius = 0.0;
+    }
+
+    public Circle(double radius)
+    {
+        _radius = radius;
+        SetRadius(radius);
+    }
+
     public void SetRadius(double radius)
     {
         if (_radius > 0)
@@ -9,7 +20,7 @@ class Circle
             Console.WriteLine("Error, radius must be > 0");
             return;
         }
-       _radius = radius; 
+        _radius = radius;
     }
 
     public double GetRadius()
