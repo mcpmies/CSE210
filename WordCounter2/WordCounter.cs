@@ -5,7 +5,7 @@ class WordCounter
     public WordCounter(string text)
     {
         _words = new List<string>();
-        //SplitTextIntoWords(string text);
+        SplitTextIntoWords(text);
     }
 
     private SplitTextIntoWords(string text)
@@ -20,11 +20,16 @@ class WordCounter
 
     public void DisplayWords()
     {
-        foreach
+        foreach (string word in _words)
         {
-
+            Console.WriteLine(word);
         }
 
+    }
+
+    public int CountSingleWord(string searchWord)
+    {
+        int count = 0;
     }
 
 }

@@ -2,9 +2,11 @@
 {
     public static void Main(string[] args)
     {
-        //Console.WriteLine("Hello world.");
-        WordCounter wordCounter = new WordCounter("This is a test");
+        WordCounter wordCounter = new WordCounter("This is a test sentence to allow testing my new class");
+        wordCounter.DisplayWords();
 
-        DisplayWords();
+        int count = wordCounter.CountSingleWord("test");
+        Console.WriteLine(count);
     }
 }
+
