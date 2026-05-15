@@ -4,7 +4,7 @@ class Questions
     {
         "What was the best part of your day?",
         "What was the worst part of your day?",
-        "How did I see the hand of the Lord in my life today?",
+        "How did I see the hand of the Lord in your life today?",
         "What was the most interesting thing that happened today?",
         "What were you grateful for today?"
     };

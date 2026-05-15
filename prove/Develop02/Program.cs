@@ -8,3 +8,5 @@ class Program
         menu.MenuSelect();
     }
 }
+
+// I added a little loading animation in the menu class that runs for a few seconds.
